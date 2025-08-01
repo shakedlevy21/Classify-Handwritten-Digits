@@ -8,7 +8,7 @@ from PIL import ImageGrab, Image
 #disable TF2 optimizations that spam warnings
 os.environ["TF_ENABLE_ONEDNN_OPTS"] = "0"
 
-#load MNIST using Keras (replaces deprecated input_data)
+#load MNIST
 (x_train, y_train), (x_test, y_test) = tf.keras.datasets.mnist.load_data()
 
 #normalize and flatten images for classic ML
